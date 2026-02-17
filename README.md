@@ -24,7 +24,7 @@ This project is intended to:
 
 ---
 
-# 🍕 TEMPLATE for documentation
+# ⚽ TEMPLATE for documentation
 
 > 🚧 Please remove the paragraphs marked with "🚧". These are comments for preparing the documentation.
 
