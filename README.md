@@ -3,7 +3,7 @@
 
 ---
 
-# 🍕 PizzaRP – Pizzeria Reference Project (Browser App)
+# ⚽ LiveScore – Reference Project (Browser App)
 
 > 🚧 Replace the screenshot with one that shows your main screen.
 
