@@ -153,12 +153,14 @@ Each app must meet the following criteria in order to be accepted (see also the 
 
 > 🚧 In this section, document how your project fulfills each criterion.
 
-The application interacts with the user via the browser. Users can:
+The system is fully browser-based and built using NiceGUI.
+The browser acts as a thin client while business logic and state management are handled server-side.
 
-- View the pizza menu
-- Select pizzas and quantities
-- See the running total
-- Receive an invoice generated as a file
+Users can:
+– Log in
+– Create and manage substitute requests
+– Accept assignments
+– View assignment history
 
 **Architecture note (per SS26 guidelines):** the browser is a thin client; UI state + business logic live on the server-side NiceGUI app.
 
@@ -166,14 +168,22 @@ The application interacts with the user via the browser. Users can:
 
 ### 2. Data Validation
 
-The application validates all user input to ensure data integrity and a smooth user experience.
-These checks prevent crashes and guide the user to provide correct input, matching the validation requirements described in the project guidelines.
+The application validates all user input to ensure data integrity, consistency, and a reliable coordination process.
+Validation includes required fields when creating substitute requests (date, time range, school, subject), logical checks for valid time intervals, and role-based permission checks to ensure that only authorized users can perform specific actions.
+Additionally, the system prevents double bookings by checking for overlapping assignments before allowing a substitute teacher to accept a request.
+These checks prevent inconsistent data, system errors, and scheduling conflicts, while guiding users to provide correct and complete information.
 
 ---
 
 ### 3. Database Management
 
-All relevant data is managed via an ORM (e.g. SQLModel or SQLAlchemy). For the pizza example this includes users, pizzas, and orders.
+All data is managed via an ORM (SQLAlchemy or SQLModel).
+The SQLite database persists:
+– Users
+– Schools
+– Subjects
+– Requests
+– Assignments
 
 ---
 
@@ -183,9 +193,11 @@ All relevant data is managed via an ORM (e.g. SQLModel or SQLAlchemy). For the p
 
 ### Technology
 
-- Python 3.x
-- Environment: GitHub Codespaces
-- External libraries (e.g. NiceGUI, SQLAlchemy, Pydantic)
+– Python 3.x
+– NiceGUI
+– SQLite
+– SQLAlchemy / SQLModel
+– Pydantic (optional validation)
 
 ---
 
