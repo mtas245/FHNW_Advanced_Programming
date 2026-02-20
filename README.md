@@ -67,16 +67,20 @@ The platform ensures transparency, prevents double bookings, and maintains histo
 ![UML Use Case Diagram](docs/architecture-diagrams/uml_use_case_diagram.png)
 
 **Use cases**
-- Show Menu (Customer)
-- Create Order / Add Items (Customer)
-- Show Current Order and Total (Customer)
-- Checkout & Print Invoice (Staff) → generates `invoice_xxx.pdf`
-- View Past Transactions (Admin)
+– Login (All users)
+– Create Substitute Request (School Manager)
+– View Open Requests (Substitute Teacher)
+– Accept Substitute Request (Substitute Teacher)
+– View Accepted Assignments (Substitute Teacher)
+– View Request Status (School Manager)
+– Cancel Substitute Request (School Manager)
+– Manage Users and Roles (Admin)
+– View Assignment History (Admin)
 
 **Actors**
-- Customer (places orders)
-- Staff (processes/prints invoices)
-- Admin (reviews transactions)
+– School Manager (creates substitute requests, manages and confirms assignments)
+– Substitute Teacher (views open requests, accepts assignments, manages own schedule)
+– Admin (manages users, roles, schools, and monitors system activity)
 
 ---
 
