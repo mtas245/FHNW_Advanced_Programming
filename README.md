@@ -1,14 +1,11 @@
-> 🚧 This is a template repository for student projects in the course Advanced Programming at FHNW, BSc BIT.  
-> 🚧 Do not keep this section in your final submission.
-
----
-
-# ⚽ LiveScore – Reference Project (Browser App)
+# ⚽ EduSub – Teacher Substitute Management System
 
 > 🚧 Replace the screenshot with one that shows your main screen.
 
 ![UI Showcase](docs/ui-images/ui_showcase.png)
 
+EduSub is a browser-based application developed for the course Advanced Programming (BSc BIT, FHNW).
+The system supports school management in coordinating teacher substitute assignments in case of absence.
 ---
 
 This project is intended to:
@@ -35,28 +32,32 @@ This project is intended to:
 ---
 
 ### Problem
-
-> 🚧 Describe the real-world problem your application solves. (Not HOW, but WHAT)
-
-💡 Example: In a small local pizzeria, the staff writes orders and calculates totals by hand. This causes mistakes and inconsistent orders or discounts.
+In schools, when a teacher becomes ill or unavailable, the school management must quickly find a substitute teacher.
+This process is often handled via phone calls, emails, or spreadsheets, which leads to delays, confusion, and lack of transparency.
+EduSub solves this coordination problem by providing a centralized web platform for managing substitute requests.
 
 ---
 
 ### Scenario
 
-> 🚧 Describe when and how a user will use your application
+When a teacher is absent:
+1.	The school management creates a substitute request in the system.
+2.	Available substitute teachers can view open requests.
+3.	A substitute teacher can accept a request.
+4.	The system updates the status and records the assignment in the database.
 
-💡 Example: PizzaRP solves the part of the problem where orders and totals are created by letting a user select items from a menu, validating the inputs, storing orders in a database, and automatically generating a correct invoice.
+The platform ensures transparency, prevents double bookings, and maintains historical records.
 
 ---
 
 ### User stories
 
-1. As a user, I want to see the pizza menu in the Browser App.
-2. As a user, I want to select pizzas and see the running total.
-3. As a user, I want a discount of 10% to be applied automatically, if the sum exceeds 50 Swiss Franks. 
-4. As a user, I want an invoice to be created and saved as a file.
-5. As an admin, I want to see all past transactions, ordered by date.
+1.	As a school manager, I want to create a substitute request so that I can quickly find a replacement teacher.
+2.	As a substitute teacher, I want to see all open substitute requests so that I can choose suitable assignments.
+3.	As a substitute teacher, I want to accept a request so that the school knows I will take the assignment.
+4.	As a school manager, I want to see who accepted a request so that planning is reliable.
+5.	As an admin, I want to manage users and roles so that only authorized users access the system.
+6.	As the system, I want to prevent double bookings so that a substitute cannot accept overlapping assignments.
 
 ---
 
