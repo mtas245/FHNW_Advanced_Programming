@@ -1,4 +1,4 @@
-# ⚽ EduSub – Teacher Substitute Management System
+# 🎒 EduSub – Teacher Substitute Management System
 
 > 🚧 Replace the screenshot with one that shows your main screen.
 
@@ -22,7 +22,7 @@ This project is intended to:
 
 ---
 
-# ⚽ TEMPLATE for documentation
+# 🎒 TEMPLATE for documentation
 
 > 🚧 Please remove the paragraphs marked with "🚧". These are comments for preparing the documentation.
 
