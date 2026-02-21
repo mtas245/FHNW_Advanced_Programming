@@ -1,0 +1,6 @@
+nicegui
+sqlalchemy
+passlib[bycrpt]
+python-dotenv
+pytest
+
